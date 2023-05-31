@@ -13,6 +13,12 @@ config_version=4
 config/name="Godot-dodge-the-creeps"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=480
+window/size/height=720
+window/stretch/aspect="keep"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
