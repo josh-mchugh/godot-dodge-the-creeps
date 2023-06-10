@@ -8,6 +8,7 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AnimatedSprite.playing = true
 	var mob_types = $AnimatedSprite.frames.get_animation_names()
 	$AnimatedSprite.play(mob_types[randi() % mob_types.size()])
 

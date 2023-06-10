@@ -12,10 +12,10 @@ var screen_size
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	hide()
 	screen_size = get_viewport_rect().size
+	hide()
 
-func _show(pos):
+func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
@@ -48,7 +48,6 @@ func _process(delta):
 		$AnimatedSprite.flip_h = velocity.x < 0
 	elif velocity.y != 0:
 		$AnimatedSprite.animation = "up"
-		$AnimatedSprite.flip_h = false
 		$AnimatedSprite.flip_v = velocity.y > 0
 		
 	
