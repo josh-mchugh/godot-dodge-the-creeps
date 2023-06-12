@@ -4,4 +4,5 @@ This project is from the Godot game engine documentation. It is their 2D game tu
 The tutorial can be found here: https://docs.godotengine.org/en/3.5/getting_started/first_2d_game/index.html
 
 Example GIF:
+
 ![Example GIF of Dodge the Creeps!](./documentation/example.gif)
